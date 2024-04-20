@@ -1,74 +1,65 @@
 body {
-    margin: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:#1e1740;
-    color: #fff; 
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  header {
-    background-color: #1e1740;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 24px;
-    text-align: left;
-  }
-  
-  .menu {
-    text-align: center;
-    background-color: #1e1740;
-  }
-  
-  .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  .menu ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .menu ul li a:hover {
-    text-decoration: underline;
-  }
-  
-.main{
-    float:left;
-    font-size:60px;
-    padding:10px;
-
-  }
-  .main2{
-    float:left;
-    font-size:20px;
-    padding:167px;
-  }
-.about{
-  float:left;
-    font-size:20px;
-    padding:10px;
-
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #1e1740;
+  color: #fff;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+header {
+  background-color: #1e1740;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: left;
+}
+
+.menu {
+  text-align: center;
+  background-color: #1e1740;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+  color: #ffd700; /* Change color to gold on hover */
+  transform: scale(1.1); /* Expand size on hover */
+}
+
+.main, .main2, .about {
+  float: left;
+  font-size: 40px;
+  padding: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.main:hover, .main2:hover, .about:hover {
+  color: #ffd700; /* Change color to gold on hover */
+  transform: scale(1.1); /* Expand size on hover */
 }
 
 .project-box {
@@ -76,6 +67,12 @@ body {
   color: #fff;
   padding: 20px;
   margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-box:hover {
+  background-color: #555; /* Darken background color on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
 }
 
 .project-box h2 {
